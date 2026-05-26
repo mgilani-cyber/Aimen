@@ -1799,16 +1799,19 @@
                 <div class="file-field">
                   <div class="lbl-row">
                     <div>
-                      <div class="lbl-text">Agreement of Purchase &amp; Sale <span class="req">*</span></div>
+                      <div class="lbl-text">Agreement of Purchase &amp; Sale</div>
                       <div class="hint">PDF or image of the signed agreement.</div>
                     </div>
                     <span class="file-status">✓ Selected</span>
                   </div>
                   <div class="file-input-wrap">
-                    <input type="file" name="purchaser_agreement" accept="image/*,application/pdf" data-required-file="purchase">
+                    <input type="file" name="purchaser_agreement" accept="image/*,application/pdf">
                   </div>
-                  <div class="err-msg" style="margin-top:8px;">Required.</div>
                 </div>
+                <label style="display:flex;align-items:flex-start;gap:10px;margin-top:10px;font-size:14px;color:var(--ink-soft);cursor:pointer;">
+                  <input type="checkbox" name="purchaser_aps_pending" value="Yes" style="margin-top:3px;flex-shrink:0;">
+                  <span>I don't have it available right now but will send to <a href="mailto:info@aimlegal.ca">info@aimlegal.ca</a> asap</span>
+                </label>
               </div>
 
               <div class="field full" style="margin-bottom:18px;">
@@ -1874,16 +1877,19 @@
                 <div class="file-field">
                   <div class="lbl-row">
                     <div>
-                      <div class="lbl-text">Agreement of Purchase &amp; Sale <span class="req">*</span></div>
+                      <div class="lbl-text">Agreement of Purchase &amp; Sale</div>
                       <div class="hint">PDF or image of the signed agreement.</div>
                     </div>
                     <span class="file-status">✓ Selected</span>
                   </div>
                   <div class="file-input-wrap">
-                    <input type="file" name="seller_agreement" accept="image/*,application/pdf" data-required-file="sale">
+                    <input type="file" name="seller_agreement" accept="image/*,application/pdf">
                   </div>
-                  <div class="err-msg" style="margin-top:8px;">Required.</div>
                 </div>
+                <label style="display:flex;align-items:flex-start;gap:10px;margin-top:10px;font-size:14px;color:var(--ink-soft);cursor:pointer;">
+                  <input type="checkbox" name="seller_aps_pending" value="Yes" style="margin-top:3px;flex-shrink:0;">
+                  <span>I don't have it available right now but will send to <a href="mailto:info@aimlegal.ca">info@aimlegal.ca</a> asap</span>
+                </label>
               </div>
 
               <div class="field full" style="margin-bottom:18px;">
