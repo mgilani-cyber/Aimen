@@ -2998,6 +2998,16 @@
 
       if (resp.ok) {
         try { localStorage.removeItem(STORAGE_KEY); } catch(e) {}
+        // Send to Google Sheets
+        try {
+          const formData = new FormData(form);
+          const data = {};
+          formData.forEach((value, key) => { data[key] = value; });
+          fetch("https://script.google.com/macros/s/AKfycbyRdbDomWkKxuoH_UTVNaPUQNqkAgwDlXovltQcEtVF4zyHF_T1NCw7_-9aB3ncQr6gtA/exec", {
+            method: "POST",
+            body: JSON.stringify(data)
+          });
+        } catch(e) {}
         document.getElementById('stateSuccess').classList.add('active');
         window.scrollTo({ top: card.offsetTop - 20, behavior: 'smooth' });
       } else {
